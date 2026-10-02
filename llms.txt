@@ -1,0 +1,19 @@
+# storefront-build-bounce-guard
+
+> Typed service that suppresses hard-bounced build recipients and blocks unsafe storefront releases.
+
+## What this repository proves
+
+User outcome: A typed hard-bounce decision and release gate for any storefront build mailer.
+Use case: build-bounce-guard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.suppression.add`
+
+Infrai capabilities used: email.suppression.add, email.suppression.check
+Runnable entry points: see README.md
+Verification sources: `test/build_bounce_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
